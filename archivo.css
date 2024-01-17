@@ -1,19 +1,90 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family:'Playfair Display', serif;
     margin: 0;
     padding: 0;
-    background-color: white;
-    background-image: url('paraiso.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-size: cover; 
+  background-image: url('/assests/cuidad.jpg');
+  background-size: cover; 
 }
+ .contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center
+ }  
 
 header {
-    background-color: #333;
-    color: #fff;
+    background-color: rgb(18, 21, 94);
+    color: #ffffff;
     padding: 1em;
-    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
 }
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo a {
+  display: inline-block;
+  margin: 0 50px; /* Espacio entre los iconos */
+}
+
+.logo img {
+  width: 200px; /* Tamaño de los logos, ajusta según sea necesario */
+  /*height: auto; /* Mantiene la proporción */
+}
+
+
+h1 {
+    font-size: 50px; 
+    text-align: left; 
+    font-family: 'Oswald', sans-serif;
+font-family: 'Playfair Display', serif;
+  }
+.logo {
+    width: 10%;
+    height: auto; 
+ } 
+ .table{
+   width: 100%;
+   border-collapse: collapse;
+   display: flex;
+    align-items: center;
+    justify-content: center;
+
+ } 
+  th, td {
+    border: 1px solid black;
+    padding: 15px;
+    text-align: center;
+  }
+
+  @media screen and (max-width: 600px) {
+    table {
+      border: 0;
+    }
+    table thead {
+      display: none;
+    }
+    table tr {
+      border-bottom: 3px solid #ddd;
+      display: block;
+      margin-bottom: 10px;
+    }
+    table td {
+      border-bottom: none;
+      display: block;
+      text-align: right;
+    }
+    table td::before {
+      content: attr(data-label);
+      font-weight: bold;
+      display: inline-block;
+      width: 100px; 
+      margin-right: 5px;
+    }
+  }
 section {
     max-width: 800px;
     margin: 2em auto;
@@ -21,27 +92,31 @@ section {
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
-
 footer {
-    background-color: #333;
+    background-color: rgb(18, 21, 94);
     color: #fff;
     padding: 1em;
     text-align: center;
-
 }
-
 .contenedores {
   
     text-align: center;
 }
+.video {
+  display: flex;
+  justify-content: center;
+}
 
+.iframe{
+  width: 90%;
+  height: 250px;
+}
 .contenedor {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
-    background-color:  rgba(255, 12, 12, 0.8);
-    color: #ff0000; 
+    background-color:  rgba(255, 255, 255, 0.8);
+    color: #ffffff; 
     text-decoration: none; 
     cursor: pointer; 
    }
@@ -49,4 +124,24 @@ footer {
    a:hover {
     color: #0056B3; 
     text-decoration: underline; 
+
    }
+  h2, h3, h4, h5, h6 {
+    font-size: 24px;  
+  }
+  .redes-sociales {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .redes-sociales a {
+    display: inline-block;
+    margin: 0 10px; /* Espacio entre los iconos */
+  }
+  
+  .redes-sociales img {
+    width: 100px; /* Tamaño de los logos, ajusta según sea necesario */
+    height: auto; /* Mantiene la proporción */
+  }
+  

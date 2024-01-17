@@ -1,0 +1,5 @@
+header {
+    background-image: url('ruta_de_la_imagen.jpg'); /* Ruta de la imagen de fondo */
+    background-size: cover; /* Ajusta la imagen para cubrir todo el encabezado */
+  }
+  
